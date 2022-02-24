@@ -1,0 +1,55 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1240px;
+    box-sizing: border-box;
+}
+
+
+
+
+/***** service card*****/
+.loder_section{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.loder_area{
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+.css_loader{
+    width: 180px;
+    height: 180px;
+    border-right: 5px solid crimson;
+    border-radius: 50%;
+    position: absolute;
+    animation: loaders 3s linear infinite;
+}
+.loder_area  h2{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    color:#f5f6fa;
+    font-size: 30px;
+    font-weight: bold;
+    transform:translate(-50%, -50%);
+}
+
+@keyframes loaders{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
